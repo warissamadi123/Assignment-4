@@ -5,3 +5,11 @@
 
 const displayedImage = document.getElementById('displayed-image');
 const thumbnails = document.querySelectorAll('.thumbnail');
+
+thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+        // Change main image source to clicked thumbnail
+        displayedImage.src = this.src;
+        displayedImage.alt = this.alt;
+    });
+});
