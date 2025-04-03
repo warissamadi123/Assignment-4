@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bouncing Balls</h1>
-    <p>Click anywhere on the canvas to create bouncing balls!</p>
-    <canvas id="canvas"></canvas>
+    <header>
+        <h1>Bouncing Balls</h1>
+        <p>Click anywhere on the canvas to create bouncing balls!</p>
+    </header>
+    <main>
+        <canvas id="canvas" role="graphics-document" aria-label="Interactive canvas for creating bouncing balls"></canvas>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
