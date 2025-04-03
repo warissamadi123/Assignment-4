@@ -2,7 +2,7 @@
     Name: Waris Samadi
     File: index.html
     Date: 2025-04-02
-    Main page for Bouncing Balls project.
+    This file contains the main page for the Bouncing Balls project.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +15,5 @@
 <body>
     <h1>Bouncing Balls</h1>
     <canvas id="canvas"></canvas>
-    <script src="main.js"></script>
 </body>
 </html>
