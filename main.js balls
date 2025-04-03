@@ -71,4 +71,18 @@ for (let i = 0; i < 5; i++) {
     balls.push(ball);
 }
 
+// Add a new ball on click
+canvas.addEventListener('click', (event) => {
+    const size = Math.random() * 30 + 10;
+    const ball = new Ball(
+        event.clientX,
+        event.clientY,
+        Math.random() * 6 - 3,
+        Math.random() * 6 - 3,
+        size,
+        `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`
+    );
+    balls.push(ball);
+});
+
 loop();
