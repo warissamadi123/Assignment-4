@@ -28,5 +28,6 @@
         </form>
         <div id="output" aria-live="polite"></div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
