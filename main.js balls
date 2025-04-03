@@ -4,3 +4,14 @@ File: main.js
 Date: 2025-04-02
 JavaScript for Bouncing Balls
 */
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+// Set canvas dimensions
+canvas.width = window.innerWidth - 40;
+canvas.height = window.innerHeight - 100;
+
+// Draw a test rectangle to confirm setup
+ctx.fillStyle = 'red';
+ctx.fillRect(50, 50, 100, 100);
