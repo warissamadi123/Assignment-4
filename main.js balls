@@ -12,6 +12,45 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth - 40;
 canvas.height = window.innerHeight - 100;
 
-// Draw a test rectangle to confirm setup
-ctx.fillStyle = 'red';
-ctx.fillRect(50, 50, 100, 100);
+// Ball class
+class Ball {
+    constructor(x, y, velX, velY, size, color) {
+        this.x = x;
+        this.y = y;
+        this.velX = velX;
+        this.velY = velY;
+        this.size = size;
+        this.color = color;
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.fillStyle = this.color;
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+        ctx.fill();
+    }
+
+    update() {
+        if (this.x + this.size >= canvas.width || this.x - this.size <= 0) {
+            this.velX = -this.velX;
+        }
+        if (this.y + this.size >= canvas.height || this.y - this.size <= 0) {
+            this.velY = -this.velY;
+        }
+
+        this.x += this.velX;
+        this.y += this.velY;
+    }
+}
+
+// Create a single ball for testing
+const ball = new Ball(100, 100, 4, 4, 20, 'blue');
+
+function loop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ball.draw();
+    ball.update();
+    requestAnimationFrame(loop);
+}
+
+loop();
