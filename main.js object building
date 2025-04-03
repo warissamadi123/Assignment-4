@@ -4,3 +4,7 @@
 // JavaScript for Object Builder
 
 const personForm = document.getElementById('personForm');
+
+personForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+});
