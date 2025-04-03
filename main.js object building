@@ -2,3 +2,5 @@
 // File: main.js
 // Date: 2025-04-02
 // JavaScript for Object Builder
+
+const personForm = document.getElementById('personForm');
