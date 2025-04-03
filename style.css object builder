@@ -4,3 +4,10 @@ File: styles.css
 Date: 2025-04-02
 CSS for Object Builder
 */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
