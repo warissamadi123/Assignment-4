@@ -4,3 +4,10 @@ File: styles.css
 Date: 2025-04-02
 CSS for Bouncing Balls
 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
