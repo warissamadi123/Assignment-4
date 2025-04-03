@@ -16,17 +16,17 @@
         <h1>Create a Person Object</h1>
         <form id="personForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter name" required />
+            <input type="text" id="name" placeholder="Enter name" required aria-label="Person's name" />
             
             <label for="age">Age:</label>
-            <input type="number" id="age" placeholder="Enter age" required />
+            <input type="number" id="age" placeholder="Enter age" required aria-label="Person's age" />
             
             <label for="species">Species:</label>
-            <input type="text" id="species" placeholder="Enter species" required />
+            <input type="text" id="species" placeholder="Enter species" required aria-label="Person's species" />
             
             <button type="submit">Create Object</button>
         </form>
-        <div id="output"></div>
+        <div id="output" aria-live="polite"></div>
     </div>
 </body>
 </html>
