@@ -1,0 +1,31 @@
+<!--
+    Name: Waris Samadi
+    File: index.html
+    Date: 2025-04-02
+    Main page for Object Builder project.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Object Builder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Create a Person Object</h1>
+        <form id="personForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required />
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age" required />
+            
+            <label for="species">Species:</label>
+            <input type="text" id="species" placeholder="Enter species" required />
+            
+            <button type="submit">Create Object</button>
+        </form>
+        <div id="output"></div>
+    </div>
+</body>
+</html>
