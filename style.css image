@@ -2,7 +2,7 @@
 Name: Waris Samadi
 File: styles.css
 Date: 2025-04-02
-Initial setup for Image Gallery
+Added main image styling
 */
 
 body {
@@ -15,4 +15,10 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
 }
