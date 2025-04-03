@@ -1,0 +1,11 @@
+/* 
+Name: Waris Samadi
+File: main.js
+Date: 2025-04-02
+Initial setup for story generator
+*/
+
+// DOM element references
+const customName = document.getElementById('customname');
+const randomize = document.querySelector('.randomize');
+const story = document.querySelector('.story');
