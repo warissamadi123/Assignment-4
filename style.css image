@@ -2,7 +2,7 @@
 Name: Waris Samadi
 File: styles.css
 Date: 2025-04-02
-Added thumbnail styling
+Complete CSS for Image Gallery
 */
 
 body {
@@ -39,4 +39,9 @@ body {
 
 .thumbnail:hover {
     border-color: #ff6b6b;
+}
+
+.thumbnail.active {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
