@@ -11,3 +11,10 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
 }
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
