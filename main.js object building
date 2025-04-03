@@ -7,4 +7,18 @@ const personForm = document.getElementById('personForm');
 
 personForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
+
+    // Get input values
+    const name = document.getElementById('name').value.trim();
+    const age = parseInt(document.getElementById('age').value.trim(), 10);
+    const species = document.getElementById('species').value.trim();
+
+    // Create person object
+    const person = {
+        name: name,
+        age: age,
+        species: species
+    };
+
+    console.log(person); // Log the created object for debugging
 });
