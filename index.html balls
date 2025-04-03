@@ -15,5 +15,6 @@
 <body>
     <h1>Bouncing Balls</h1>
     <canvas id="canvas"></canvas>
+    <script src="main.js"></script>
 </body>
 </html>
