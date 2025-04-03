@@ -15,12 +15,12 @@
 <body>
     <div class="gallery">
         <div class="main-image">
-            <img id="displayed-image" src="images/pic1.jpg" alt="Main gallery image">
+            <img id="displayed-image" src="images/pic1.jpg" alt="Main displayed image in the gallery">
         </div>
         <div class="thumbnails">
-            <img src="images/pic1.jpg" alt="Image 1" class="thumbnail">
-            <img src="images/pic2.jpg" alt="Image 2" class="thumbnail">
-            <img src="images/pic3.jpg" alt="Image 3" class="thumbnail">
+            <img src="images/pic1.jpg" alt="Thumbnail of image 1" class="thumbnail">
+            <img src="images/pic2.jpg" alt="Thumbnail of image 2" class="thumbnail">
+            <img src="images/pic3.jpg" alt="Thumbnail of image 3" class="thumbnail">
             <!-- Add more as needed -->
         </div>
     </div>
