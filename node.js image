@@ -1,7 +1,7 @@
 // Name: Waris Samadi
 // File: index.js
 // Date: 2025-04-02
-// Added API endpoint to return JSON data
+// Complete Node.js server with static file serving and API endpoint
 
 const http = require('http');
 const fs = require('fs');
@@ -11,26 +11,30 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
+  // API endpoint
   if (req.url === '/api') {
-    // API endpoint
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ message: 'Hello from the API!' }));
     return;
   }
 
-  // Serve static files
+  // Static file serving
   let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
 
   fs.readFile(filePath, (err, content) => {
     if (err) {
       if (err.code === 'ENOENT') {
+        // File not found
         res.writeHead(404, { 'Content-Type': 'text/plain' });
         res.end('File Not Found');
       } else {
+        // Server error
+        console.error(err); // Log the error for debugging
         res.writeHead(500, { 'Content-Type': 'text/plain' });
-        res.end('Server Error');
+        res.end('Internal Server Error');
       }
     } else {
+      // Serve the file
       res.writeHead(200, { 'Content-Type': getContentType(filePath) });
       res.end(content, 'utf-8');
     }
