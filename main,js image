@@ -19,3 +19,6 @@ thumbnails.forEach(thumbnail => {
         this.classList.add('active');
     });
 });
+
+// Initialize first thumbnail as active
+document.querySelector('.thumbnail').classList.add('active');
