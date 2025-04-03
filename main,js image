@@ -2,3 +2,6 @@
 // File: main.js
 // Date: 2025-04-02
 // JavaScript for Image Gallery
+
+const displayedImage = document.getElementById('displayed-image');
+const thumbnails = document.querySelectorAll('.thumbnail');
