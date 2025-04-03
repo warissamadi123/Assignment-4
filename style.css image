@@ -2,7 +2,7 @@
 Name: Waris Samadi
 File: styles.css
 Date: 2025-04-02
-Added thumbnail container styling
+Added thumbnail styling
 */
 
 body {
@@ -27,4 +27,16 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 15px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.thumbnail:hover {
+    border-color: #ff6b6b;
 }
