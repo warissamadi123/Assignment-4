@@ -18,8 +18,25 @@ canvas {
     background-color: #fff;
     border: 1px solid #ccc;
     transition: border-color 0.3s ease;
+    max-width: 100%;
+    height: auto;
 }
 
 canvas:hover {
     border-color: #ff6b6b;
+}
+
+/* Accessibility: Ensure canvas has a label */
+canvas[aria-label] {
+    position: relative;
+}
+
+canvas[aria-label]::before {
+    content: attr(aria-label);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #333;
 }
