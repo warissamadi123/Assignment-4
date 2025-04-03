@@ -20,5 +20,10 @@ personForm.addEventListener('submit', function(event) {
         species: species
     };
 
-    console.log(person); // Log the created object for debugging
+    // Display the object
+    const outputDiv = document.getElementById('output');
+    outputDiv.innerHTML = `
+        <h2>Created Object:</h2>
+        <pre>${JSON.stringify(person, null, 2)}</pre>
+    `;
 });
